@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Gogle FAQ</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -56,13 +59,15 @@
         ]
     ?>
 
-    <!-- Ciclo FOREACH per stampare a video domande e relative risposte (tag HTML già inseriti nell'array) -->
-    <?php
-        foreach ($arr_faq as $faq) {
-            echo $faq['domanda'];
-            echo $faq['risposta'];
-        }
-    ?>
+    <div class="container">
+        <!-- Ciclo FOREACH per stampare a video domande e relative risposte (tag HTML già inseriti nell'array) -->
+        <?php
+            foreach ($arr_faq as $faq) {
+                echo $faq['domanda'];
+                echo $faq['risposta'];
+            }
+        ?>
+    </div>
 
 </body>
 </html>
